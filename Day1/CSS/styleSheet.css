@@ -1,0 +1,30 @@
+div {
+    border: 3px solid blue;
+}
+
+.red-box {
+    border: 3px solid red;
+}
+
+#purple-box {
+    border: 3px solid purple;
+}
+
+.important-box {
+    border: 3px solid black !important
+}
+
+
+[disabled] {
+    background-color: hotpink;
+}
+[type='password'] {background-color: red;}
+
+button:hover {
+    width: 100px;
+    height: 100px;
+}
+
+button:active {
+    background-color: green;
+}
