@@ -16,7 +16,7 @@ const doubleTheValue = numberArray.map(value => {
     return value * 2
 })
 
-//While
+//While loop
 let value = 0;
 
 while (value < 5) {
