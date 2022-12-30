@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .wrapper {
+            display: grid;
+
+            /* repeat(3, 1fr) is the same as 1fr 1fr 1fr */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+
+
+            background-color: white;
+            border: 1px solid black;
+
+
+            gap: 10px;
+            /* 
+            */
+        }
+
+        div {
+            background-color: rgba(234, 255, 0, 0.196);
+            border: 1px solid rgb(190, 207, 2);
+            border-radius: 10px;
+        }
+
+        .one {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .two {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .three {
+            grid-column: 3;
+            grid-row: 1;
+        }
+
+        .four {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .five {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .six {
+            grid-column: 3;
+            grid-row: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+        <div class="four">Four</div>
+        <div class="five">Five</div>
+        <div class="six">Six</div>
+    </div>
+</body>
+
+</html>

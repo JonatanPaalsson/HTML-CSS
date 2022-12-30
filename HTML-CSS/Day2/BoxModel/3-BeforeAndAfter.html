@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .red-box {
+            width: 10px;
+            height: 10px;
+            background-color: red;
+        }
+
+        .pseudo::after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+        }
+
+        [data-tooltip]:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            font-size: 8px;
+            left: 0px;
+            margin-top: 24px;
+            padding: 8px;
+
+            border: 1px solid black;
+            box-shadow: 0.5px 0.5px 0 0;
+            background-color: rgb(231, 231, 231);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="red-box"></div> -->
+    <p class="pseudo">Pseudo</p>
+
+
+    <button data-tooltip="You need to fill in all information in order to submit">Submit</button>
+
+</body>
+
+</html>

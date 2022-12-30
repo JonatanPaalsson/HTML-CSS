@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        *> {
+            box-sizing: border-box;
+        }
+
+        div {
+            border: 1px solid black;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+
+            /* 
+            flex-wrap: wrap; 
+            */
+        }
+
+        .container div {
+            flex-grow: 4;
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+
+
+        #two {
+            flex-grow: 10;
+        }
+
+        #three {
+            flex-shrink: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="one">one</div>
+        <div id="two">two</div>
+        <div id="three">three</div>
+        <div class="four">four</div>
+    </div>
+</body>
+
+</html>
