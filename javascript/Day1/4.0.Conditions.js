@@ -7,7 +7,7 @@ if (myString === "hello") {
 } else {
     console.log("No match 😓")
 }
-
+/*
 
 const number = 6
 
@@ -28,3 +28,5 @@ if (number == "6") {
 } else {
     console.log("No match 😓")
 }
+
+*/
