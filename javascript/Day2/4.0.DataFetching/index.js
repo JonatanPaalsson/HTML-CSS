@@ -1,6 +1,7 @@
 const button = document.querySelector("button")
 const img = document.querySelector("img")
-button.addEventListener("click", getCatPic);
+
+button.addEventListener("click", getCatPicture);
 
 function getCatPicture() {
     fetch("https://aws.random.cat/meow")
@@ -9,7 +10,7 @@ function getCatPicture() {
 }
 
 async function getCatPic() {
-    const cat = await fetch("https://aws.random.cat/meow").then(res => res.json())
-    img.src = cat.file
-    
+    const cat = await fetch("https://aws.random.cat/meow")
+    const response = await cat.json()
+    img.src = response.file
 }
