@@ -1,5 +1,6 @@
 const button = document.getElementById("myBtn");
-button.addEventListener("click", myFunction);
+button.addEventListener("click", useInnerHTML);
+
 
 function myFunction() {
   const enterString = prompt("What should be displayed in the button?");
@@ -13,4 +14,12 @@ function changeToRedColor() {
 function changeColor() {
   const color = prompt("What color should the button be?");
   button.style.color = color;
+}
+
+function changeAttribute() {
+  button.setAttribute("className", "newClass")
+}
+
+function useInnerHTML() {
+  button.innerHTML += "<span>Hello<span>"
 }
