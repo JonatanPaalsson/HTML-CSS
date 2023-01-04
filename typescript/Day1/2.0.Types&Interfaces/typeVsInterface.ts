@@ -7,11 +7,11 @@ interface Bear extends Animal {
 }
 
 //Always extendable
-/* interface Bear {
+interface Bear {
   dangerous: boolean;
-} */
+}
 
-const bear: Bear = { name: "Bjørn", honey: true };
+const bear: Bear = { name: "Bjørn", honey: true, dangerous: false };
 
 type Vegetable = {
   name: string;
@@ -23,6 +23,6 @@ type Olive = Vegetable & {
 
 /* type Olive = {
     isBlack: boolean;
-} */
+}  */
 
 const olive: Olive = { name: "my olive", isGreen: false };

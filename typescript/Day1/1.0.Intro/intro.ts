@@ -1,4 +1,4 @@
-let value: number | string = 0;
+let value: number | string = 10;
 
 value = "hello";
 
@@ -15,3 +15,7 @@ const personJonatan: { firstName: string; lastName: string; age: number } = {
   lastName: "Pålsson",
   age: 32,
 };
+
+const doNotDoThis: any = "Stay away from this";
+
+doNotDoThis.fullname;

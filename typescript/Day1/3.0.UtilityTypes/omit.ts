@@ -16,8 +16,6 @@
 
   todo;
 
-  const todo: TodoPreview;
-
   type TodoInfo = Omit<Todo, "completed" | "createdAt">;
 
   const todoInfo: TodoInfo = {
