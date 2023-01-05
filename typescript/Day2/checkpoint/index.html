@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Welcome to my awesome Rock, Paper, Scissor game</h1>
+        <div class="score">
+            <div>
+                <p>Your number of wins</p><p id="yourWinsText">0</p>
+            </div>
+            <div>
+                <p>Opponents number of wins</p><p id="opponentWinsText">0</p>
+            </div>
+        </div>
+        <div class="choiceDivHidden" id="resultDiv">
+            <div class="opponentText">
+                <p>Your opponent choose:</p>
+                <p id="choiceText" class="choiceText"></p>
+            </div>
+            <h2 id="resultText"></p>
+        </div>
+        <div id="btnGroup">
+            <button id="rockBtn">Rock</button>
+            <button id="paperBtn">Paper</button>
+            <button id="scissorBtn">Scissor</button>
+        </div>
+        
+    </div>
+        <script src="index.js"></script>
+    </body>
+    </html>

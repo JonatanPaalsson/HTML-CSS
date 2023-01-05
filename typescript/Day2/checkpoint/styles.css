@@ -1,0 +1,45 @@
+*  {
+box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+
+.container {
+    width: 70vw;
+    background-color: white;
+    margin: 48px auto;
+    padding: 24px;
+    text-align: center;
+}
+
+.choiceDivHidden {
+    display: none;
+}
+
+.choiceDivVisible {
+    display: block;
+}
+
+.score {
+    display: flex;
+    justify-content: space-around;
+}
+
+.opponentText {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 24px;
+}
+
+.choiceText {
+    margin: 13px 16px;
+}
+
+button {
+    margin: 0 32px;
+}
