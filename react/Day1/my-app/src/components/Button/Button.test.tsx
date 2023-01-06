@@ -16,7 +16,7 @@ describe("My Button component", () => {
     const button = screen.getByTestId("myBtn");
 
     expect(button).toBeInTheDocument();
-    expect(screen.getByTestId("myBtn")).toHaveTextContent(buttonText);
+    expect(button).toHaveTextContent(buttonText);
   });
 
   test("should execute callback on click", async () => {
