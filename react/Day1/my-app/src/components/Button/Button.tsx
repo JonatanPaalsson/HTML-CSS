@@ -6,9 +6,17 @@ type ButtonProps = {
 };
 
 export const Button = ({ text, callback }: ButtonProps) => {
-  return <button onClick={callback}>{text}</button>;
+  return (
+    <button data-testid="myBtn" onClick={callback}>
+      {text}
+    </button>
+  );
 };
 
 export const PrimaryButton = ({ text, callback }: ButtonProps) => {
-  return <button onClick={callback}>{text}</button>;
+  return (
+    <button className="primary-button" onClick={callback}>
+      {text}
+    </button>
+  );
 };
