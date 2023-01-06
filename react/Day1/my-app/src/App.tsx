@@ -25,9 +25,14 @@ const App = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn more React
+          Learn React
         </a>
-        <Button text="myButton" callback={myFunction}></Button>
+        <Button
+          text="btn"
+          callback={myFunction}
+          style={{ backgroundColor: "green", margin: "46px" }}
+        ></Button>
+        <PrimaryButton text="myButton" callback={myFunction}></PrimaryButton>
       </header>
     </div>
   );

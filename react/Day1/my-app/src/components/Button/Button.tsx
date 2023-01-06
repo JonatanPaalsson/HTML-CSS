@@ -3,11 +3,12 @@ import "./Button.css";
 type ButtonProps = {
   text: string;
   callback: () => void;
+  style?: React.CSSProperties
 };
 
-export const Button = ({ text, callback }: ButtonProps) => {
+export const Button = ({ text, callback, style }: ButtonProps) => {
   return (
-    <button data-testid="myBtn" onClick={callback}>
+    <button  style={style}  data-testid="myBtn" onClick={callback}>
       {text}
     </button>
   );
