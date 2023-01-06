@@ -1,8 +1,16 @@
-import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import { Button, Link } from "./components";
 
-function App() {
+type AppProps = { someString: string };
+
+const App = () => {
+  let counter = 0;
+
+  const myFunction = () => {
+    console.log("hello");
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -16,11 +24,12 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn more React
         </a>
+        <Button text="myButton" callback={myFunction}></Button>
       </header>
     </div>
   );
-}
+};
 
 export default App;
