@@ -1,14 +1,14 @@
+import "./Button.css";
+
 type ButtonProps = {
   text: string;
   callback: () => void;
 };
 
-const Button = ({ text, callback }: ButtonProps) => {
+export const Button = ({ text, callback }: ButtonProps) => {
   return <button onClick={callback}>{text}</button>;
 };
 
-const anotherButton = (props: ButtonProps) => {
-  return <button onClick={props.callback}>{props.text}</button>;
+export const PrimaryButton = ({ text, callback }: ButtonProps) => {
+  return <button onClick={callback}>{text}</button>;
 };
-
-export default Button;

@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Button, Link } from "./components";
+
+import { Button, PrimaryButton } from "./components";
 
 type AppProps = { someString: string };
 
