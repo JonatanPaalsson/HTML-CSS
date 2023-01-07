@@ -7,7 +7,6 @@ const Counter = () => {
   const [threeInARow, setThreeInARow] = useState(0);
 
   useEffect(() => {
-    console.log("test");
     if (count > lastValue) {
       setThreeInARow((t) => t + 1);
     } else {

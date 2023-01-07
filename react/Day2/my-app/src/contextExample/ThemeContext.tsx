@@ -1,10 +1,10 @@
 import React, { createContext, useState } from "react";
 
-type theme = "dark" | "light";
+export type Theme = "dark" | "light";
 
 type contextType = {
-  theme: theme;
-  setTheme: React.Dispatch<React.SetStateAction<theme>>;
+  theme: Theme;
+  setTheme: React.Dispatch<React.SetStateAction<Theme>>;
 };
 
 type props = {
@@ -14,7 +14,7 @@ type props = {
 export const ThemeContext = createContext<contextType | null>(null);
 
 export const ThemeContextProvider: React.FC<props> = ({ children }) => {
-  const [theme, setTheme] = useState<theme>("dark");
+  const [theme, setTheme] = useState<Theme>("dark");
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>

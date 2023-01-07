@@ -29,7 +29,7 @@ function App() {
           <div>Are you sure you want to delete?</div>
         </Modal>
         {/* <Counter></Counter> */}
-        {/* <Context></Context> */}
+        <Context></Context>
       </header>
     </div>
   );
