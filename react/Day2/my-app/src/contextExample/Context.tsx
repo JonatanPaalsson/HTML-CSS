@@ -6,13 +6,9 @@ import { ThemeContextProvider, Theme } from "./ThemeContext";
 
 const Context = () => {
   const [theme, setTheme] = useState<Theme>("dark");
+
   return (
     <ThemeContextProvider>
-      {/*       <ThemeButton />
-      <ThemeButtonBad
-        theme={theme}
-        callback={() => setTheme((t) => (t === "dark" ? "light" : "dark"))}
-      ></ThemeButtonBad> */}
       <NestedComponent1 changeTheme={setTheme} theme={theme} />
     </ThemeContextProvider>
   );
