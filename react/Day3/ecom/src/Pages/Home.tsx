@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
-      <h1>Welcome to Jonatans Nørdy T-shirt store!</h1>
+      <h1>Welcome to Jonatans Nørdy T-shirt Store!</h1>
       {products.data.map((product: MyStoreProduct) => {
         return <ProductCard key={product.id} product={product} />;
       })}
@@ -20,4 +20,3 @@ const Home = () => {
 };
 
 export default Home;
-x
