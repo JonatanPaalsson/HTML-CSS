@@ -1,0 +1,16 @@
+.basket-footer {
+    border-top: 1px solid black;
+    bottom: 0px;
+    position: absolute;
+    width: 100vw;
+    height: 48px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    padding: 0 32px;
+    color: white
+}

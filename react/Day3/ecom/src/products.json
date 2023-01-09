@@ -1,0 +1,13 @@
+{
+    "data": [{
+        "id": 0,
+        "name": "Hellfire T-shirt",
+        "image": "https://www.shirtstore.no/pub_images/original/NFLX-1-ST019-BK.jpg?extend=copy&width=700&method=fit&height=700&type=webp",
+        "price": 100
+    }, {
+        "id": 1,
+        "name": "Turtles T-shirt",
+        "image": "https://www.shirtstore.no/pub_images/original/NIC-1-TMNT002_g_28446.jpg?extend=copy&width=700&method=fit&height=700&type=webp",
+        "price": 129
+    }]
+}
