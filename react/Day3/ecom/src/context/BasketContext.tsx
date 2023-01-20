@@ -21,8 +21,28 @@ type props = {
 export const BasketContext = createContext<contextType | null>(null);
 
 export const BasketContextProvider: React.FC<props> = ({ children }) => {
-  const [totalAmount, setTotalAmount] = useState(0);
-  const [basket, setBasket] = useState<BasketItem[]>([]);
+  const [totalAmount, setTotalAmount] = useState(
+    parseInt(
+      localStorage.getItem("my-total-amount")
+        ? JSON.parse(localStorage.getItem("my-total-amount") || "0")
+        : "0"
+    )
+  );
+  const [basket, setBasket] = useState<BasketItem[]>(
+    JSON.parse(
+      localStorage.getItem("my-basket")
+        ? localStorage.getItem("my-basket") || "[]"
+        : "[]"
+    )
+  );
+
+  useEffect(() => {
+    localStorage.setItem("my-total-amount", JSON.stringify(totalAmount));
+  }, [totalAmount]);
+
+  useEffect(() => {
+    localStorage.setItem("my-basket", JSON.stringify(basket));
+  }, [basket]);
 
   useEffect(() => {
     const totalAmount = basket.reduce(
